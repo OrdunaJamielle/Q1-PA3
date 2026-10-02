@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackstone Bistro</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: brown;
+            margin: 0;
+        }
+
+        .hero-image{
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8f/Heavens_Gate_and_The_Pink_Panther.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+        } 
+
+        .hero-text{
+            color: rgb(230, 201, 166);
+            text-align: center;
+        }
+
+        input{
+            background-color: antiquewhite;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .button{
+            background-color: chocolate;
+            color: beige;
+            border-radius: 4px;
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="hero-image">
+      <div class="hero-text">
+      <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+      </div>
+    </div>
+
+    <p>
+        Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour.
+    </p>
+
+    <form>
+
+        <fieldset>
+        <legend>Your Informations</legend>
+        <label for="fname">Name: </label>
+        <input id= "fname" type="text" placeholder="Enter Full Name">
+        <br>
+        <label for="addr">Address: </label>
+        <input id= "addr" type="text" placeholder="Enter Full Adress">
+        <br>
+        <label for="telno">Contact: </label>
+        <input id= "telno" type="text" placeholder="Enter Telephone Number">
+        <br>
+        <label for="Email">Email: </label>
+        <input id= "Email" type="text" placeholder="Enter Email">
+        <br>
+         <label for="request">Delivery Instructions: </label><br>
+         <textarea name="delreq" id="request" row="10" cols="30"></textarea>
+    </fieldset>
+
+    <h3>Design your dream pizza:</h3> 
+
+
+    <fieldset>
+         <legend>Pizza Specification</legend>
+         <legend>Crust <em>(Chooose one)</em></legend>
+        <input type="radio" name="radio"> 
+        <label>Classic White</label>
+        <br>
+        <input type="radio" name="radio">
+        <label>Multigrain</label>
+        <br>
+        <input type="radio" name="radio">
+        <label>Cheese-stuffed crust</label>
+        <br>
+        <input type="radio" name="radio"> 
+        <label>Gluten-free</label> 
+    </fieldset>
+
+            <fieldset>
+                <legend>Toppings <i>(Choose as many as you like)</i></legend>
+                <input type="Checkbox">
+                <label>Red sauce</label>
+                <br>
+                <input type="Checkbox">
+                <label>White sauce</label>
+                <br>
+                <input type="Checkbox">
+                <label>Mozarella Cheese</label>
+                <br>
+                <input type="Checkbox">
+                <label>Pepperoni</label>
+                <br>
+                <input type="Checkbox">
+                <label>Mushrooms</label>
+                <br>
+                <input type="Checkbox">
+                <label>Pepper</label>
+            </fieldset>
+
+
+        <fieldset>
+            <legend>Quantity</legend>
+            <label>How many Pizzas:</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </fieldset>
+
+        
+        <input 
+        type="submit" value="Bring me my pizza" button>
+               <input type="submit" value="Let me order again">
+
+    </fieldset>
+    </form>
+
+    <footer>
+        <p>© 2026 | Jamielle Orduña | 9-Topaz</p>
+    </footer>
+
+</body>
+</html>
